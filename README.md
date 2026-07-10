@@ -14,6 +14,16 @@ The platform includes AI-powered lead extraction, an interactive dashboard, anal
 
 ## 💻 Source Code
 **GitHub:** https://github.com/Ambreesh1/nextlead-ai
+## 📸 Project Screenshot
+<img width="1920" height="1080" alt="Screenshot 2026-07-10 120528" src="https://github.com/user-attachments/assets/9099f37e-8bbf-4506-b6c4-1f7cd8ef0ef7" />
+<img width="1920" height="1080" alt="Screenshot 2026-07-10 120235" src="https://github.com/user-attachments/assets/26ddc97e-c921-45ce-b7c2-d16cf7d6ef0b" />
+<img width="1920" height="1080" alt="Screenshot 2026-07-10 120214" src="https://github.com/user-attachments/assets/caffce60-2e40-42ad-a3bd-b4c56d055e4b" />
+<img width="1920" height="1080" alt="Screenshot 2026-07-10 120149" src="https://github.com/user-attachments/assets/11e06a7b-c33f-44c1-bda1-7e46fb116ef3" />
+
+
+
+
+
 ## ✨ Key Features
 
 - AI-powered CSV field mapping using Google Gemini
