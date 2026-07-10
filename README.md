@@ -7,7 +7,7 @@ The platform includes AI-powered lead extraction, an interactive dashboard, anal
 
 ---
 ## 🌐 Live Demo
-**Frontend:** https://your-vercel-url.vercel.app
+**Frontend:** https://nextlead-ai.vercel.app/
 
 ## ⚙️ Backend API
 **Backend:** https://nextlead-ai.onrender.com
