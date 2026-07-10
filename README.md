@@ -6,6 +6,14 @@ NextLead AI is a modern AI-powered CRM platform that intelligently imports leads
 The platform includes AI-powered lead extraction, an interactive dashboard, analytics, lead management, CSV preview, and cloud-ready architecture built using Next.js, Express.js, TypeScript, and Docker.
 
 ---
+## 🌐 Live Demo
+**Frontend:** https://your-vercel-url.vercel.app
+
+## ⚙️ Backend API
+**Backend:** https://nextlead-ai.onrender.com
+
+## 💻 Source Code
+**GitHub:** https://github.com/Ambreesh1/nextlead-ai
 ## ✨ Key Features
 
 - AI-powered CSV field mapping using Google Gemini
