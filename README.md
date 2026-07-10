@@ -1,18 +1,23 @@
-# NextLead — AI-Powered Lead Intelligence
+# NextLead AI
+### Intelligent CRM Lead Management Platform
 
-A premium CRM importer that ingests **any** lead export — Facebook Lead Ads, Google Ads,
-Excel sheets, real-estate CRM dumps, sales reports, marketing agency CSVs, or hand-made
-spreadsheets — and uses Google Gemini to intelligently map arbitrary, unpredictable column
-layouts onto a single fixed CRM schema, inside a full dashboard product (sidebar nav, leads
-table, analytics, team, settings) rather than a bare upload form.
+NextLead AI is a modern AI-powered CRM platform that intelligently imports leads from CSV files with different formats and automatically maps them into a standardized CRM schema using Google Gemini.
 
-Built for the GrowEasy Software Developer (Intern / Full-Time) assignment. The product is
-branded **NextLead** end-to-end on the frontend; the backend service (untouched per the
-rebrand requirements — see [Rebrand notes](#rebrand-notes)) still refers to the target schema
-as "GrowEasy CRM format" internally, which is exactly what the assignment asked the AI to map
-into.
+The platform includes AI-powered lead extraction, an interactive dashboard, analytics, lead management, CSV preview, and cloud-ready architecture built using Next.js, Express.js, TypeScript, and Docker.
 
 ---
+## ✨ Key Features
+
+- AI-powered CSV field mapping using Google Gemini
+- Intelligent Lead Management Dashboard
+- CSV Preview before Import
+- Analytics Dashboard
+- Lead Search & Filtering
+- CSV Export
+- Dark Mode
+- Responsive Design
+- Docker Support
+- REST API Architecture
 
 ## Table of contents
 
@@ -32,21 +37,7 @@ into.
 
 ---
 
-## Live demo & submission info
-
-| | |
-|---|---|
-| **Hosted app** | _add your deployed frontend URL here_ |
-| **Backend API** | _add your deployed backend URL here_ |
-| **GitHub repo** | _add your repo URL here_ |
-| **Position applied for** | Software Developer Intern / Full-Time _(choose one)_ |
-
-> Remember: email the hosted URL + GitHub URL + position applied for to **varun@groweasy.ai**
-> before **12 July 2026**.
-
----
-
-## Overall architecture
+## system architecture
 
 This is a **two-service architecture** — a Next.js frontend and a standalone Express/TypeScript
 backend — communicating over a JSON/multipart REST API. The two are independently deployable
@@ -116,7 +107,7 @@ likely be structured.
 ## Folder structure
 
 ```
-groweasy-csv-importer/
+nextlead/
 ├── backend/
 │   ├── src/
 │   │   ├── config/          # env loading (zod-validated), Gemini client setup
@@ -451,27 +442,28 @@ The main endpoint. Multipart field name: `file`. Rate-limited (see env vars abov
 
 ---
 
-## Rebrand notes
+## Branding
 
 The product is branded **NextLead — AI-Powered Lead Intelligence** throughout the frontend: page
 titles, the sidebar, the landing page, toasts, and all UI copy. This was a frontend-only rebrand
 by design:
 
-- **The backend was not modified** — same routes, same request/response shapes, same validation,
-  same business rules. Nothing about `POST /api/csv/process`'s contract changed.
-- The backend's AI system prompt (`backend/src/prompts/crmExtraction.prompt.ts`) still refers to
-  the target schema as **"GrowEasy CRM format"** internally. That's not leftover branding to clean
-  up — it's the literal target schema name the assignment specifies for the AI to map into, and
-  changing backend files was explicitly out of scope for the rebrand. If you do want that renamed
-  too, it's a one-line change to the prompt's system instructions with no effect on request/response
-  shape or logic.
-- Everything the user actually sees — the app name, tagline, navigation, empty states, toasts,
-  chart titles — says NextLead. The only remaining "GrowEasy" text lives in backend source
-  comments/prompts and this README's context section, not in anything a user or reviewer of the
-  live app would encounter.
+- *The application is branded as NextLead AI throughout the frontend while maintaining full compatibility with the existing backend API and CRM schema.
 
 ## Known limitations / future work
+## Skills Demonstrated
 
+- Full Stack Development
+- Next.js
+- Express.js
+- TypeScript
+- REST API Development
+- Google Gemini Integration
+- Prompt Engineering
+- Docker
+- Git & GitHub
+- Cloud Deployment
+## Roadmap
 - Progress during AI processing is a **bounded client-side simulation** (see
   `frontend/components/import/ProcessingAnimation.tsx`), not a real server-sent progress stream. A
   follow-up could add Server-Sent Events or WebSockets so the UI reflects true per-batch
@@ -486,3 +478,11 @@ by design:
 - Team and Settings pages are intentionally presentational — the assignment's backend has no
   team/user-management or settings endpoints, so those pages demonstrate the intended UX without
   claiming functionality the API doesn't back.
+  ### Future Improvements
+
+- Authentication
+- PostgreSQL Integration
+- Multi-user Workspaces
+- Background Job Queue
+- Real-time Progress Tracking
+- Role Based Access Control
