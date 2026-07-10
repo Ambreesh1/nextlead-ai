@@ -44,7 +44,7 @@ export interface CrmRecord {
   lead_owner: string | null;
   crm_status: CrmStatus | null;
   crm_note: string | null;
-  data_source: DataSource | '' | null;
+  data_source: DataSource | '' ;
   possession_time: string | null;
   description: string | null;
 }

@@ -105,7 +105,7 @@ export async function extractCrmBatch(
       lead_owner: null,
       crm_status: null,
       crm_note: null,
-      data_source: null,
+      data_source: "",
       possession_time: null,
       description: null,
     };
